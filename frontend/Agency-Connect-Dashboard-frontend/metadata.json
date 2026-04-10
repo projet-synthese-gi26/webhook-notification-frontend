@@ -1,0 +1,4 @@
+{
+  "name": "AgencyConnect Dashboard",
+  "description": "Professional Travel Agency Frontend with dual-mode architecture (Real API + Simulation/Mock). Manages webhook notifications and reservations."
+}
