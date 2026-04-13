@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agency-connect-dashboard
+    restart: always
+    ports:
+      # On mappe le port 3001 de ta machine vers le port 80 de Nginx
+      # (J'ai mis 3001 pour éviter un conflit si ton autre frontend tourne déjà sur 3000)
+      - "3001:80"
