@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: all-agency-frontend
+    restart: always
+    ports:
+      # Mappe le port 3000 de ta machine vers le port 80 du conteneur Nginx
+      - "3000:80"

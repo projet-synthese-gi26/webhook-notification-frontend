@@ -1,0 +1,4 @@
+{
+  "name": "All Agency Frontend",
+  "description": "Frontend central pour le système de réservation de voyages distribué. Agit comme producteur de données pour l'architecture événementielle."
+}
