@@ -1,0 +1,26 @@
+name: React js + vite CI/CD
+
+on:
+  push:
+    branches:
+      - "main"
+      - "master"
+      
+jobs:
+  pipeline:
+    uses: projet-synthese-gi26/workflows/.github/workflows/react-vite-ci-cd.yml@main
+    with:
+      app_name: webhook-notification-agency-web
+      node_version: "20"
+      run_lint: true
+    secrets:
+      PERSONAL_ACCESS_TOKEN:             ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      REGISTRY_NAMESPACE:                ${{ secrets.REGISTRY_NAMESPACE }}
+      SSH_PRIVATE_KEY:                   ${{ secrets.SSH_PRIVATE_KEY }}
+      REMOTE_USER:                       ${{ secrets.REMOTE_USER }}
+      REMOTE_HOST:                       ${{ secrets.REMOTE_HOST }}
+      DEPLOY_DELAY:                      ${{ secrets.DEPLOY_DELAY }}
+      # ---- Secrets sensibles (repo Settings → Secrets) ----
+      VITE_API_URL:                      'https://traefikdev.yowyob.com/webhook-notification'
+      
+ 
