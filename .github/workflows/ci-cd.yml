@@ -21,6 +21,6 @@ jobs:
       REMOTE_HOST:                       ${{ secrets.REMOTE_HOST }}
       DEPLOY_DELAY:                      ${{ secrets.DEPLOY_DELAY }}
       # ---- Secrets sensibles (repo Settings → Secrets) ----
-      VITE_API_URL:                      'https://traefikdev.yowyob.com/webhook-notification'
+      VITE_API_URL:                      'https://traefikdev.yowyob.com/webhook-engine'
       
  
