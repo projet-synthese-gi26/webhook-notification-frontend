@@ -1,9 +1,5 @@
 # =============================================================
 # DOCKERFILE — FRONTEND VITE / REACT
-# Pas de Nginx. Le container sert l'app via "vite preview"
-# (équivalent prod de "npm run dev", sert le /dist buildé).
-# La terminaison HTTP / reverse proxy est gérée par le
-# docker-compose infra du serveur.
 # =============================================================
 
 # -----------------------------------------------------------
